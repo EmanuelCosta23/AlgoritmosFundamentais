@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    var a = parseInt(prompt("Digite um número:"));
+    var b = parseInt(prompt("Digite um número:"));
+    var n;
+    var mdc;
+
+    if(a > b) {
+        n = a;
+    } else {
+        n = b;
+    }
+
+    for(var i = 1; i <= n; i++){
+        if(a % i == 0 && b % i == 0){
+            mdc = i;
+        }
+    }
+
+    console.log("O MDC de " + a + " e de " + b + " é " + mdc);
+</script>

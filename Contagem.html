@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    var n = prompt("Informe a quantidade notas:");
+    var nota;
+    var cont = 0;
+    
+    for(var i; i < n; i++) {
+        nota = parseInt(prompt("Digite um número:"));
+
+        if(nota >= 50) {
+            cont++;
+        }
+    }
+    
+    console.log("Quantidade de números maiores do que 50 é de " + cont);
+  </script>

@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    var n = parseInt(prompt("Digite um número inteiro:"));
+    var cont = 0;
+
+    for (var i = 2; i < n; i++) {
+        if (n % i == 0) {
+            cont++;
+        }    
+    }
+    
+    if (cont == 0) {
+        console.log(n + " é primo");
+    } else {
+        console.log(n + " nao é primo");
+    }
+</script>

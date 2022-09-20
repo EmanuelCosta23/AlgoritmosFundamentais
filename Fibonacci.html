@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<script>
+    var n = parseInt(prompt("Digite um número inteiro:"));
+
+    var t1 = 0;
+    var t2 = 1;
+    var t3;
+    var array = [];
+    var saida = "";
+
+    if(n == 1) {
+        array.push(t1);
+        saida = saida + 0 + " ";
+    } else {
+        array.push(t1);
+        array.push(t2);
+        saida = saida + 0 + " " + 1 + " ";
+    }
+
+    for (var i = 2; i < n; i++) {
+        t3 = t2 + t1;
+        array.push(t3);
+        if(i == n - 1) {
+            saida = saida + t3;
+        } else {
+            saida = saida + t3 + " ";
+        }
+        t1 = t2;
+        t2 = t3;
+    }
+
+    console.log(saida);
+</script>
